@@ -1,67 +1,867 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml+png" href="./cloud-experts-logo.png" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="Landing page template built with HTML and Bootstrap 4 for presenting training courses, classes, workshops and for convincing visitors to register using the form."
-    />
-    <meta name="author" content="Inovatik" />
+    <meta name="description" content="Landing page template built with HTML and Bootstrap 4 for presenting training courses, classes, workshops and for convincing visitors to register using the form.">
+    <meta name="author" content="Inovatik">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="" />
-    <!-- website name -->
-    <meta property="og:site" content="" />
-    <!-- website link -->
-    <meta property="og:title" content="" />
-    <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" />
-    <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" />
-    <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" />
-    <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
 
-    <title>Cloud Experts</title>
-
+    <!-- Website Title -->
+    <title>Corso - Training Course Landing Page Template</title>
+    
     <!-- Styles -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" crossorigin src="/cloud-experts-v2/assets/index-0Mj-NKz0.js"></script>
-    <link rel="stylesheet" crossorigin href="/cloud-experts-v2/assets/index-qaiunCVy.css">
-  </head>
-  <body data-spy="scroll" data-target=".fixed-top">
-    <div id="root"></div>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="/assets/favicon-5NdsNKMW.png">
+  <link rel="stylesheet" crossorigin href="/assets/index-JuGrjfMD.css">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Corso</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="data:image/svg+xml,%3csvg%20id='Layer_3'%20data-name='Layer%203'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20124%2042'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23f8b547;}%3c/style%3e%3c/defs%3e%3ctitle%3elogo%3c/title%3e%3cpath%20class='cls-1'%20d='M12.546,42A11.087,11.087,0,0,1,3.56,37.607Q0,33.217,0,26.119A33.154,33.154,0,0,1,2.451,13.176a23.727,23.727,0,0,1,7-9.511A15.23,15.23,0,0,1,19.169,0a13.8,13.8,0,0,1,8.345,2.327,6.767,6.767,0,0,1,3.18,5.555,8.211,8.211,0,0,1-1.926,5.5,12.9,12.9,0,0,1-4.2-.815,9.212,9.212,0,0,1-3.5-1.978l1.109-5.875A6.875,6.875,0,0,0,18.5,3.84q-3.56,0-6.3,6.079A36.364,36.364,0,0,0,9.454,24.9q0,5.876,1.954,8.522a5.764,5.764,0,0,0,4.756,2.647q4.61,0,8.87-4.3l2.393,2.153a19.077,19.077,0,0,1-2.334,2.56,23.456,23.456,0,0,1-3.326,2.7,18.825,18.825,0,0,1-4.143,1.95A15.368,15.368,0,0,1,12.546,42Z'/%3e%3cpath%20class='cls-1'%20d='M38.571,42a7.649,7.649,0,0,1-6.3-2.822q-2.275-2.821-2.275-7.882a18.051,18.051,0,0,1,3.472-11.11,11.308,11.308,0,0,1,9.6-4.654l2.1,0.116a4.674,4.674,0,0,1,2.217-.523q4.608,0,4.61,8.667a30.163,30.163,0,0,0,4.843-.64l0.934-.233,0.35,2.269a27.108,27.108,0,0,1-5.193,1.454l-1.167.232a24.768,24.768,0,0,1-4.493,10.616A10.418,10.418,0,0,1,38.571,42Zm3.152-5q2.45,0,4.405-3.141a20.882,20.882,0,0,0,2.714-6.631q-6.245,0-6.244-4.654a8.157,8.157,0,0,1,.758-3.489l0.292-.582a1.311,1.311,0,0,0-.583-0.116,0.967,0.967,0,0,0-.525.116q-1.458.931-2.742,4.363a22.309,22.309,0,0,0-1.284,7.853Q38.513,37,41.723,37Z'/%3e%3cpath%20class='cls-1'%20d='M54.619,41.475H54.21a11.467,11.467,0,0,1-.116-2.123,64.186,64.186,0,0,1,1.575-8.929A78.892,78.892,0,0,0,57.245,22.1a6.754,6.754,0,0,0-1.634-3.956l-0.525-.7,0.058-.756a41.619,41.619,0,0,1,10.1-.873,10.364,10.364,0,0,1,.7,4.246,13.818,13.818,0,0,1,2.684-2.792,6.432,6.432,0,0,1,4.2-1.745q3.151,0,3.151,5.468-0.293.35-.788,0.9A11.472,11.472,0,0,1,73.2,23.443a7.455,7.455,0,0,1-2.888,1.221,13.157,13.157,0,0,1-.992-1.571q-0.934-1.57-1.4-1.571a6.313,6.313,0,0,0-2.568,1.745Q62.671,35.31,62.672,38.858c0,0.855.019,1.454,0.058,1.8Q60.687,41.476,54.619,41.475Z'/%3e%3cpath%20class='cls-1'%20d='M93.6,33.681a7.085,7.085,0,0,1-3.238,5.992A12.33,12.33,0,0,1,82.978,42a11.009,11.009,0,0,1-6.564-1.746q-2.422-1.744-2.422-3.083,0-.813,2.042-2.647a9.84,9.84,0,0,1,3.443-2.24,15.249,15.249,0,0,1,4.785,6.806q2.158-.174,2.16-2.036,0-2.675-4.727-7.591T76.968,21.64a5.014,5.014,0,0,1,2.626-4.508,11.946,11.946,0,0,1,6.331-1.6A9.721,9.721,0,0,1,91.5,16.841a4.114,4.114,0,0,1,1.868,3.548q0,2.241-3.56,6.2,0.407,0.407,1.051,1.076a13.9,13.9,0,0,1,1.692,2.53A7.166,7.166,0,0,1,93.6,33.681ZM90.447,20.418q0-2.035-2.8-2.036a4.089,4.089,0,0,0-2.217.552,1.537,1.537,0,0,0-.876,1.251q0,1.279,2.568,3.606L88,24.548Q90.447,22.454,90.447,20.418Z'/%3e%3cpath%20class='cls-1'%20d='M104.452,42a7.647,7.647,0,0,1-6.3-2.822q-2.278-2.821-2.276-7.882a18.056,18.056,0,0,1,3.471-11.11,11.31,11.31,0,0,1,9.6-4.654l2.1,0.116a4.674,4.674,0,0,1,2.217-.523q4.608,0,4.609,8.667a30.173,30.173,0,0,0,4.844-.64l0.934-.233L124,25.188a27.1,27.1,0,0,1-5.194,1.454l-1.167.232a24.759,24.759,0,0,1-4.493,10.616A10.414,10.414,0,0,1,104.452,42Zm3.151-5q2.451,0,4.4-3.141a20.863,20.863,0,0,0,2.714-6.631q-6.245,0-6.243-4.654a8.158,8.158,0,0,1,.759-3.489l0.292-.582a1.313,1.313,0,0,0-.583-0.116,0.967,0.967,0,0,0-.526.116q-1.458.931-2.742,4.363a22.309,22.309,0,0,0-1.284,7.853Q104.394,37,107.6,37Z'/%3e%3c/svg%3e" alt="alternative"></a> 
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#register">REGISTER <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#description">DETAILS</a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DATE</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <div class="countdown">
+                            <span id="clock"></span>
+                        </div>
+                        <h1>SEO Training Course</h1>
+                        <p class="p-large">Do you feel like you're doing a lot of guess work when it comes to SEO for your website? Take the SEO training course to change that</p>
+                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
+                        <a class="btn-outline-lg page-scroll" href="#instructor">DISCOVER</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        
+        <!-- Image Slider -->
+        <div class="outer-container">
+            <div class="slider-container">
+                <div class="swiper-container image-slider-1">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Slide -->
+                        <div class="swiper-slide" >
+                            <img class="img-fluid" src="/assets/details-slide-1-ieybO62t.jpg" alt="alternative">
+                        </div>
+                        <!-- end of slide -->
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="/assets/details-slide-2-hZ2qYR0H.jpg" alt="alternative">
+                        </div>
+                        <!-- end of slide -->
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="/assets/details-slide-3-Li5q1I-7.jpg" alt="alternative">
+                        </div>
+                        <!-- end of slide -->
+
+                    </div> <!-- end of swiper-wrapper -->
+                    
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- end of add arrows -->
+                    
+                </div> <!-- end of swiper-container -->
+            </div> <!-- end of slider-container -->
+        </div> <!-- end of outer-container -->
+        <!-- end of image slider -->
+
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Registration -->
+    <div id="register" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Register Using The Form</h2>
+                        <p>It's easy to register for the course, just fill out the form and click submit. Then you will be registered for one of the best SEO training courses in the industry</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>Your information</strong> is required to complete the registration</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>It's safe with us</strong> and will not be used for marketing</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><strong>You will receive</strong> a confirmation email in less than 24h</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Registration Form -->
+                    <div class="form-container">
+                        <form id="registrationForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <label class="label-control" for="rname">Complete name</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <label class="label-control" for="remail">Email address</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+                                <label class="label-control" for="rphone">Phone number</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I've read and agree to Corso's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">REGISTER</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div> <!-- end of form-container -->
+                    <!-- end of registration form -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of registration -->
+
+
+    <!-- Partners -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">FEATURED IN</p>
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider-2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAAZCAYAAAAmGVxfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTg2MTM0NzVDN0Q2MTFFOTkxNjJDMzM2ODAzNzBDREYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTg2MTM0NzRDN0Q2MTFFOTkxNjJDMzM2ODAzNzBDREYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjI2NkZFQjY2MjdGMTFFOUI5RDhFNEEwQkFGMDY5MEIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjI2NkZFQjc2MjdGMTFFOUI5RDhFNEEwQkFGMDY5MEIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5YSVrKAAAHE0lEQVR42uxbW4jcVBjO1K0gWGtWsYJ9KOOlWsSiqYhvFbK1oj74MOv1RWxnCvrgpTiLiLc+OFOkUJHqjoIgKtJREXxQbER8EYWNooKK1rHiBQVrFKuLdXfH/3S/yOnf/+ScJFO7dOeHj2ROck7+nPPlvyVT6ff73otvxp6DXEPosra9hMmbNgZPeEMZikWWOJ53IuFR1tYnLCO0iazV4VQOxSYjjudtIZzD2j4hrCW8RZatdyxvwtEyZ4lPqBNCQkToEJIhPdyE1n9gZBsl3MfaDhBWE/4hbD2KJNpjOUURI8a2jLRANg+EU5a6MaTR/2/ZHiAsZ237CBcSdhC+OkpEq2LhsyTUSDdewhrV2e/FEBYEmL/2QiHbBYRNrO17EO0nWARFjGtp8xos3Q+Ec8m0zpXULcx5rrKC6wpeq8MIFx3HBGtivnx4hQVDNkWmE1jbLLbKtf6BJKODtt9hFe4nPFJSN25dYi0brgrWKEBbp8C1GhjfH5BbXqiiSFZjc7og3OiVhA2s7TPCGsL7hJfQtotwJuEvwhlo20rWbgdZtwMln0JdujReW3OzilRTlj55rdvxLtxb9BYC2UYE86pc5EqUPO7EdilhM47rblOVRHYSbhvgxMQsA4qJcBE7r6pta6x/W7OIAaxkB/11kiYC8ZrCWB4br4cxIyHLDbBvy3R96F3VdIq0RMjkAWraNdI+CfRJNP0DoW96rMvI56wL4usaW5+0JPbffJvItgnZpi6fEy4iPEP4WCPll4jf1rPzb6aLbaOL7iuQHEgWKjYsjseIkk5ii/WNENf5LC6rMZc8IZC+xa7RRltTSDTGMHYd5/iCG5NiyybgGx66jpAhSzrofWLtPFti1C2hyxHzDUNw2HxLRd3TCA8TKlrbfiQFvxEe0tqnsV2PcoguqhD85KCsGpE2EZ6mwEDIQCDhJJu82NG1SLHjpGGR0wWsC9fjWaAukwIxTePaiMZ1dQktEu2+i+jiNN8S2R5DbW0JUEE8thRK7GfnXwcXehJcqy5jRIrLB5QccKLtFvp1DRYvNBDTt13LMFYd15oQXGKIiU5wvGuJR1ts4WJYvorByqY6NYUkZwyY0EIBX3Or/KGKNNdeVBfn+eZu9GLl/jB4BeT5EQvyjcFSfYEJvR6W71TtmCLr44RLSyYHISvwSmWRtvZ0BgYitjGBISY/zHjCs67VYHFdi018jEVPF7hvsJ5VRpoe69czEF96cDqG0k0b2MPuhT8IRXXJnG/E1qHyTNyyPYs4rKK50VHsP0g4aCDHrSiDLBfOuYQudmOOeM03BLKhBimTnMggSFr0jdliBMJ5NuJ3LJlr4tkLzL2MxCNhNTFJv8RQPyuccJXQRZxvIte4IhqShSi1PKmozHEt9lOyJSDf64oHprugwaa1xZ4WTtlGJBopaNU8y6KNs2A1MFiiIgsQCC6ibXH5HWYFqhnJTk2IhZQF+hplncBgvWJB1xb61R3mVLLgRXVxnm+dAK8iLlO1shngHcJH2M8UItwuItQdtHs+irunaIdXEe4mbC9Atp5gSRIkDTGsYVb/OKOeFDiQjT/NNjcbOR6vCkQOMmqAPD5sIDYMGLHTtkYOHcvoEgjJXM9GNtX5qZJ1u1sIH3hHvnVQcg+R4mmeVeYt5hYpBmckIX5OsknJgy3BMB2vSg8QI4ReK5Os4zpDmSJ9kxK7JFwldXGdb+dPjJyESPEhEeplJAs/E1Zoh1Xsp17q31UytihiGV0z3iTnWNLxxJGwibDAYwWmvQ1iTbF7CjNKQbGhPllEF9f59kaIHOfR9j38ViWMv+E2Z4EZtM9o7fp2hsZQpZFflPWC+d6IrPQgXHMqm/Ea6ztDcuBibfLefOx4ng8kFjfq5Tie9fBI1kV6t8u/zgiEmCvRCskSgQJDJlnFOEV1yTPfhyzbcyjkculntOlbfX8ZEekGIo0q/KrPj9QXIitZoVf5+9sdCZDk/DDTpZSRVdv7VUuQipRFejn14V+bTOK3/iakyhY9faMRa+5N+jAh62OC3Zo+oyV1cV4vRbZXCG/Des1qVqyP/TnNyvH9OWb5Zoloq1BbU9ntGiFZWFG0mDtAq5a1GFGOsfImGPz4BLJAW82qJyxwkBHEN1ifrpBtcn2K6JJnvg+RTSm/wXC8b2mTLNy33vyrLXXD7xL+ZGTbnsMyRSXJltU//ZaraZgw21iSy48sD08kWLo0yK8banZdz/2LlBikiYS4LrDoU0SXPPPtVV54Y0opsNc7/F1oGbKp7b1kTneSlXseyYL6oPIsb/7/Cld7A5aS/0HQi8ixd+z+e8CL2T1LCCC5cFvIEDoSI5curv9BqOCvfFMGk1mUbCpZOJtwsjf/OmsO+5eRYp96Q1mUkr5B2OJINFc5nXAFEUuRTr1vvYqweki0xS3/CjAAMQqJ4403Y2UAAAAASUVORK5CYII=" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAAfCAYAAAAbdwRBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjhGMzM2MEVDN0Q2MTFFOUE0ODBGQzQ5MzJCMDYwN0MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjhGMzM2MERDN0Q2MTFFOUE0ODBGQzQ5MzJCMDYwN0MiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NkI1MTI3NEQ2MjdGMTFFOTk5MzBDMzUxNjFCMEZFQTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NkI1MTI3NEU2MjdGMTFFOTk5MzBDMzUxNjFCMEZFQTciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5HuOBIAAAHcElEQVR42uxb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" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAAAaCAYAAABCUTWIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzQ5NkZDNERDN0Q2MTFFOUEwMjNBNURDNDBGNjc5RDEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzQ5NkZDNENDN0Q2MTFFOUEwMjNBNURDNDBGNjc5RDEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzE2OENGREY2MjdGMTFFOTkzQTZGOUEyRTBERTAzNTYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzE2OENGRTA2MjdGMTFFOTkzQTZGOUEyRTBERTAzNTYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7FJyiEAAAHTklEQVR42uxb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" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAAAfCAYAAABkphawAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDE0MkI5QjJDN0Q2MTFFOUIxMjNFRDE4MDUxMTYxRjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDE0MkI5QjFDN0Q2MTFFOUIxMjNFRDE4MDUxMTYxRjEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzZDRTdBMUI2MjdGMTFFOThCNkNGQkNEOUVCNjhGOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzZDRTdBMUM2MjdGMTFFOThCNkNGQkNEOUVCNjhGOEEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7HISFKAAAHJklEQVR42uxc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" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAAAeCAYAAAA7HGznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEMyQTI5NjdDN0Q2MTFFOTkxQ0NDNTA4NEM4Rjg2NUUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEMyQTI5NjZDN0Q2MTFFOTkxQ0NDNTA4NEM4Rjg2NUUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N0M5MkQzMjM2MjdGMTFFOTlCQjVBQjk5NDZCNjIzODAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6N0M5MkQzMjQ2MjdGMTFFOTlCQjVBQjk5NDZCNjIzODAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4EhMxyAAAHdUlEQVR42uxb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" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAAfCAYAAADKvMJ0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjI0RUE1MTJDN0Q2MTFFOThDNkNENzY4NjBDMkFGRDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjI0RUE1MTFDN0Q2MTFFOThDNkNENzY4NjBDMkFGRDAiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODFCRjJENzg2MjdGMTFFOUI5NUVBN0I1QjcyRTcxQTkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODFCRjJENzk2MjdGMTFFOUI5NUVBN0I1QjcyRTcxQTkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6I2mH9AAAGg0lEQVR42uxa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" alt="alternative">
+                                </div>
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of partners -->
+
+
+    <!-- Instructor -->
+    <div id="instructor" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="/assets/instructor-C_WPVAip.jpg" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>I’m Garry Your Trainer</h2>
+                        <p>Hi everybody! I am Garry and I will be your main instructor durnig the SEO training course. I have more than 10 years experience in SEO and I am very passionate about this field. Register for the course and let's meet.</p>
+                        <p>Teaching students all about the beste SEO techniques is something I love to do as a full-time job</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of instructor -->
+
+
+    <!-- Description -->
+    <div id="description" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>What Will You Learn In Our SEO Focused Training Course</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled li-space-lg first">
+                        <li class="media">
+                            <i class="bullet">1</i>
+                            <div class="media-body">
+                                <h4>Optimizing your site for mobile devices</h4>
+                                <p>One of the keys of great SEO is having a mobile friendly website which works smoothly on all devices</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="bullet">2</i>
+                            <div class="media-body">
+                                <h4>Understand how users search</h4>
+                                <p>It's not enough anymore to find relevant industry keywords and write huge amounts of content </p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="bullet">3</i>
+                            <div class="media-body">
+                                <h4>Write for humans optimize for engines</h4>
+                                <p>Write well structured and understandable articles not just a mix of paragraphs that contain keywords</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <ul class="list-unstyled li-space-lg second">
+                        <li class="media">
+                            <i class="bullet">4</i>
+                            <div class="media-body">
+                                <h4>Analyse your existing search traffic</h4>
+                                <p>A good action plan comes out of understanding where your current position is and the environment</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="bullet">5</i>
+                            <div class="media-body">
+                                <h4>Keep updated with the latest changes</h4>
+                                <p>Google changes it's search indexing algorithm twice a year so it's important to stay updated with news</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <i class="bullet">6</i>
+                            <div class="media-body">
+                                <h4>Learn the most important ranking factors</h4>
+                                <p>Learn which are the most important search engine ranking factors and optimize your website accordnigly</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of description -->
+
+
+    <!-- Students -->
+    <div class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Who Should Attend The SEO Training Course</h2>
+                        <p>This course is for anyone passionate about the web and especially fit for those seeking to improve their online presence for company websites and blogs </p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">LIGHTBOX</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="/assets/students-_Uv1QPQu.jpg" alt="alternative">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of students -->
+
+
+    <!-- Details Lightbox -->
+	<div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/assets/details-lightbox-ZX9495Dg.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>SEO Training Course</h3>
+                    <hr>
+                    <h5>For everybody</h5>
+                    <p>The training course is dedicates to anyone passionate about the web and in need of improving their current online presence.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-square"></i><div class="media-body">Link building framework</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i><div class="media-body">Know your current position</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i><div class="media-body">Partnering with blogs</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i><div class="media-body">Naming your images</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i><div class="media-body">Creating good sitemaps</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i><div class="media-body">Writing for humans</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#register">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+
+
+    <!-- Video -->
+    <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Course Video Presentation</h2>
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                                <img class="img-fluid" src="/assets/video-5HUr2LXA.jpg" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of video -->
+
+
+    <!-- Takeaways -->
+    <div class="cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Key Takeaways</h2>
+                    <p class="p-heading">Here are the main topics that will be covered in the SEO training course. They cover all the basics of SEO and even some advanced techniques that will help you along the way</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Position Analysis</h4>
+                            <p>Understand where your website is currently positioned in search engine queries</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Keyword Planning</h4>
+                            <p>Find the best relevant keywords that fit your website SEO strategy in the long run</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Writing Articles</h4>
+                            <p>How to plan your content strategy and write articles that are optimized for SEO</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Gathering Backlinks</h4>
+                            <p>Backlinks are vital for SEO and we'll teach you everything there is to know about them</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="far fa-handshake"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Build Partnerships</h4>
+                            <p>Partnerships will help you establish your website or blog as an authority in your field</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Evaluate Actions</h4>
+                            <p>Learn how to use the right analytics tools to evaluate your SEO actions and improve them</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards -->
+    <!-- end of takeaways -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Check out our attendees testimonials from previous editions of the SEO Training</h3>
+
+                    <!-- Text Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container text-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="/assets/testimonial-1-NHnZHdKb.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">I took the SEO training course about a year ago and I am very happy. It taught me all the basics of search engine optimization and some tricks.</div>
+                                        <div class="testimonial-author">Jude Thorn - Online Marketer</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="/assets/testimonial-2-i0jN2Ps1.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">Awesome course for the money. I never thought I could learn so much about search engine optimization in such a short amount of time. Highly recommend.</div>
+                                        <div class="testimonial-author">Roy Smith - Developer</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="/assets/testimonial-3-kSvv8_jA.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">Corso is the best SEO training course in the market. It teaches you all the basics but it also adds value with some advanced tips & tricks the are great.</div>
+                                        <div class="testimonial-author">Martin Singer - Online Marketer</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-wrapper">
+                                        <img class="img-fluid" src="/assets/testimonial-4-5CIJhKef.jpg" alt="alternative">
+                                    </div> <!-- end of image-wrapper -->
+                                    <div class="text-wrapper">
+                                        <div class="testimonial-text">Learning SEO can actually be fun. I attended Corso SEO training and I had a great time with my peer students and the instructors. Highly recommended course.</div>
+                                        <div class="testimonial-author">Ronda Louis - Business Owner</div>
+                                    </div> <!-- end of text-wrapper -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+                            
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of text slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of testimonials -->
+
+
+    <!-- Date -->
+    <div id="date" class="basic-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h2>December 22nd 2020 at Innovation Hub Space</h2>
+                        <p>Our mission is to help people do better SEO. The team is excited to invite you to the next SEO Training Course session which undoubtedly will provide you with the necessary skills to improve your online presence. Fill out the form to register and we'll contact you in less than 24h</p>
+                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-5 -->
+    <!-- end of date -->
+
+
+    <!-- Newsletter -->
+    <div class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Stay updated with news by subscribing to our newsletter and our social channels</h3>
+                    
+                    <!-- Newsletter Form -->
+                    <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="nemail" required>
+                            <label class="label-control" for="nemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to Corso's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SIGN UP</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of newsletter form -->
+
+                    <!-- Social Links -->
+                    <div class="icon-container">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of icon-container -->
+                    <!-- end of social icons -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of newsletter -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Contact Details</h2>
+                        <p>For registration questions please get in touch using the contact details below. For any questions use the form.</p>
+                        <h3>Main Office Location</h3>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">22 Innovative, San Francisco, CA 94043, US</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div class="media-body">+44 68 554 332, &nbsp;&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp; +44 31 276 112</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="light-gray" href="mailto:contact@zigo.com">contact@zigo.com</a> <i class="fas fa-globe"></i><a class="light-gray" href="#your-link">www.zigo.com</a></div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Corso's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-3 -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-col first">
+                        <h5>About Corso</h5>
+                        <p class="p-small">We're passionate about teaching people how to do better SEO for their online presence</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col second">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col third">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="footer-col fourth">
+                        <h5>Social Media</h5>
+                        <p class="p-small">For news & updates follow us</p>
+                        <a href="#your-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#your-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#your-link">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#your-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#your-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#your-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
+                    <p class="p-small">Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
     <!-- Scripts -->
-    <script src="src/js/jquery.min.js"></script>
-    <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="src/js/popper.min.js"></script>
-    <!-- Popper tooltip library for Bootstrap -->
-    <script src="src/js/bootstrap.min.js"></script>
-    <!-- Bootstrap framework -->
-    <script src="src/js/jquery.easing.min.js"></script>
-    <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="src/js/jquery.countdown.min.js"></script>
-    <!-- The Final Countdown plugin for jQuery -->
-    <script src="src/js/swiper.min.js"></script>
-    <!-- Swiper for image and text sliders -->
-    <script src="src/js/jquery.magnific-popup.js"></script>
-    <!-- Magnific Popup for lightboxes -->
-    <script src="src/js/validator.min.js"></script>
-    <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="src/js/scripts.js"></script>
-    <!-- Custom scripts -->
-  </body>
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/jquery.countdown.min.js"></script> <!-- The Final Countdown plugin for jQuery -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
 </html>
